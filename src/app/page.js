@@ -7,6 +7,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <Navbar />
+        <DashboardLayout />
       </main>
     </div>
   );
