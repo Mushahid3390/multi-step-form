@@ -1,6 +1,12 @@
 .page {
     background: #F1F0FB;
     width: 100vw;
-    height: 100vh; 
+    height: auto; 
     padding: 100px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
