@@ -1,41 +1,151 @@
-import React from "react";
+"use client"
+import {useState} from "react";
 import styles from "./PersonalInfo.module.scss";    
+import Input from "@/components/input/Input";
 
 const PersonalInfo = () => {
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      address: "",
+    });
+
+const [error, setError] = useState({
+       name: "",
+      email: "",
+      phone: "",
+    });
+
+const handleFormData = (e) => {
+  const {name , value} = e.target;
+   setFormData((prev) => {
+   return {
+      ...prev,
+      [name]: value,
+    };
+   });
+
+   setError((pre) => {
+    return{
+      ...pre,
+      [name]: "",
+    };
+   });
+}
+
+const handleFormSubmit = (e) => {
+   e.preventDefault();
+   const error = dataValidate(formData);
+   if(Object.keys(error).length>0){
+    setError(error);
+    return;
+   }
+
+   setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      address: "",
+   });
+   alert("form submitted");
+}
+
+const dataValidate = ({name, email, phone}) => {
+  const error = {};
+
+  let namePattern = /^[A-za-z\s]+$/;
+  let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  let phonePattern = /^[+-]?[0-9]{10}$/;
+
+
+  // name validation
+  if(!name){
+    error.name= "Name is required";
+  }else if(name.length>20){
+    error.name= "Name must be less than 20 characters"
+  }else if(!namePattern.test(name.trim())){
+    error.name = "Name can contain on;ly letter or space";
+  }
+
+  // Email validation 
+  if(!email){
+    error.email = "Email is required";
+  }else if(!emailPattern.test(email.trim())){
+    error.email = "Invalid Email";
+  }
+
+  // Phone validation 
+  if(!phone){
+    error.phone = "Phone is required";
+  }else if(!phonePattern.test(phone.trim())){
+    error.phone = "Invalid Phone number"
+  }
+  return error;
+}
+
   return (
     <div className={`${styles.personalInfoSection}`}>
       <div className={`${styles.personalInfoContainer}`}>
-        <form action="/submit-personal-info" className={`${styles.personalInfoForm}`}>
+        <form onSubmit={handleFormSubmit} className={`${styles.personalInfoForm}`}>
           <h3 className={`${styles.personalInfoTitle}`}>Personal Information</h3>
           <div className={`${styles.personalInfoInputs}`}>
-            <div className={`${styles.personalInfoInputGroup}`}>
-              <label className={`${styles.personalInfoLabel}`} htmlFor="name">Full name</label>
-              <input className={`${styles.personalInfoInput}`} type="text" id="name" placeholder="Enter your full name" />
+            <div>
+               <Input label={"Full name"} 
+                   type={"text"}
+                   placeholder={"Enter your full name"} 
+                   value={formData.name} 
+                   onChange={handleFormData}
+                   name={"name"}/>
+                {Object.keys(error).length>0&&<p className={styles.error}>{error.name}</p>}
             </div>
-            <div className={`${styles.personalInfoInputGroup}`}>
-              <label className={`${styles.personalInfoLabel}`} htmlFor="email">Email</label>
-              <input className={`${styles.personalInfoInput}`} type="email" id="email" placeholder="Enter your email" />
+
+           <div>
+             <Input label={"Email"}
+                   type={"email"}
+                   placeholder={"Enter your email address"} 
+                   value={formData.email}
+                   onChange={handleFormData}
+                   name={"email"}/>
+               {Object.keys(error).length>0&&<p className={styles.error}>{error.email}</p>}
+           </div>
+            
+            <div>
+              <Input label={"Phone number"}
+                   type={"tel"}
+                   placeholder={"Enter your phone number"} 
+                   value={formData.phone}
+                   onChange={handleFormData}
+                   name={"phone"}/>
+                {Object.keys(error).length>0&&<p className={styles.error}>{error.phone}</p>}
             </div>
-            <div className={`${styles.personalInfoInputGroup}`}>
-              <label className={`${styles.personalInfoLabel}`} htmlFor="phone">Phone number</label>
-              <input className={`${styles.personalInfoInput}`} type="tel" id="phone" placeholder="(123) 000-0000" />
+
+            <div>
+              <Input label={"Company"}
+                   type={"text"}
+                   placeholder={"Enter your company name"} 
+                   value={formData.company}
+                   onChange={handleFormData}
+                   name={"company"}/>
             </div>
-            <div className={`${styles.personalInfoInputGroup}`}>
-              <label className={`${styles.personalInfoLabel}`} htmlFor="company">Company</label>
-              <input
-                className={`${styles.personalInfoInput}`}             
-                type="text"
-                id="company"
-                placeholder="Enter your company name"
-              />
-            </div>
+
           </div>
-          <div  className={`${styles.personalInfoInputGroup}`}>
-            <label className={`${styles.personalInfoLabel}`} htmlFor="address">Address</label>
-            <input className={`${styles.personalInfoInput}`} type="text" id="address" placeholder="Enter your address" />
-          </div>
+              <Input label={"Address"}
+                     type={"text"}
+                     placeholder={"Enter your address"} 
+                     value={formData.address}
+                     onChange={handleFormData}
+                     name={"address"}/>
+
+           <button 
+            type="submit"
+            className={`${styles.continueButton}`}
+            >
+         Continue
+         </button>
         </form>
-        <button type="submit" className={`${styles.continueButton}`}>Continue</button>
       </div>
     </div>
   );
