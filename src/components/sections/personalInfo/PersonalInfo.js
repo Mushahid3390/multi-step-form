@@ -2,6 +2,7 @@
 import {useState} from "react";
 import styles from "./PersonalInfo.module.scss";    
 import Input from "@/components/input/Input";
+import Button from "../../button/Button.js";
 
 const PersonalInfo = () => {
     const [formData, setFormData] = useState({
@@ -139,12 +140,7 @@ const dataValidate = ({name, email, phone}) => {
                      onChange={handleFormData}
                      name={"address"}/>
 
-           <button 
-            type="submit"
-            className={`${styles.continueButton}`}
-            >
-         Continue
-         </button>
+           <Button label= "Continue" varient="primary" type="submit"/>
         </form>
       </div>
     </div>
