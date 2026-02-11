@@ -4,16 +4,19 @@ import headPhoneLogo from "../../../public/Headphones.svg";
 import Image from "next/image";
 import styles from "./Sidebar.module.scss";
 
-const Sidebar = () => {
+const Sidebar = ({stepN}) => {
   return (
     <div className={styles.sidebarContainer}>
+
       <div className={styles.sidebar}>
+
         <div className={styles.logoContainer}>
           <Image src={logo} alt="logo" className={styles.logoImage} />
         </div>
+
         <div className={styles.stepsContainer}>
           <div className={`${styles.section}`}>
-            <p className={`${styles.step} ${styles.stepNumber}`}>1</p>
+            <p className={`${styles.step} ${stepN >= 1 ? styles.stepNumber : ''}`}>1</p>
             <div>
               <h3 className={styles.h3}>Personal Information</h3>
               <p className={styles.description}>
@@ -21,9 +24,27 @@ const Sidebar = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.bar}`}></div>
+          <div className={`${styles.bar}`}>
+            <div className={`${styles.barinit} ${stepN > 1 ? styles.barfinal : ''}`}></div>
+          </div>
+
+
           <div className={`${styles.section}`}>
-            <p className={`${styles.step} ${styles.stepNumber}`}>2</p>
+            <p className={`${styles.step} ${stepN >= 2 ? styles.stepNumber : ''}`}>2</p>
+            <div>
+              <h3 className={styles.h3}>Our Services</h3>
+              <p className={styles.description}>
+                Select the services you are interested in.
+              </p>
+            </div>
+          </div>
+          <div className={`${styles.bar}`}>
+            <div className={`${styles.barinit} ${stepN > 2 ? styles.barfinal : ''}`}></div>
+          </div>
+
+
+          <div className={`${styles.section}`}>
+            <p className={`${styles.step} ${stepN >= 3 ? styles.stepNumber : ''}`}>3</p>
             <div>
               <h3 className={styles.h3}>Subscription plan</h3>
               <p className={styles.description}>
@@ -31,28 +52,12 @@ const Sidebar = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.bar}`}></div>
-          <div className={`${styles.section}`}>
-            <p className={`${styles.step} ${styles.stepNumber}`}>3</p>
-            <div>
-              <h3 className={styles.h3}>Identity verification</h3>
-              <p className={styles.description}>
-                Verify your identity for security purposes.
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.bar}`}></div>
-          <div className={`${styles.section}`}>
-            <p className={`${styles.step} ${styles.stepNumber}`}>4</p>
-            <div>
-              <h3 className={styles.h3}>Activate account</h3>
-              <p className={styles.description}>
-                Final step! Let’s activate your account.
-              </p>
-            </div>
-          </div>
+          
         </div>
+
       </div>
+
+
       <div className={styles.footer}>
         <div>
             <h3 className={styles.footerH3}>Need help?</h3>

@@ -10,12 +10,18 @@ import icon5 from "../../../../public/icons/Icon5.svg"
 import icon6 from "../../../../public/icons/Icon6.svg"
 import Button from '../../button/Button.js'
 
-const OurServices = () => {
+const OurServices = ({setServices, onBack}) => {
   const [selectedService, setSelectedService] = useState(null);
 
   const handleServiceClick = (service) => {
-    setSelectedService(service);
+    setSelectedService(selectedService === service ? null : service);
   };
+
+  const handleNext = () => {
+    if(selectedService){
+      setServices(selectedService);
+    }
+  }
   return (
     <div className={`${styles.ourServices}`}>
        <div className={`${styles.ourServicesContent}`}>
@@ -52,8 +58,8 @@ const OurServices = () => {
         </div>
 
         <div className={`${styles.ourServicesFooter}`}>
-            <Button label="Go Back" varient="button"/>
-            <Button label="Next Step" varient="primary"/>
+            <Button label="Go Back" varient="button" onClick={onBack}/>
+            <Button label="Next Step" varient="primary" onClick={handleNext} disabled={!selectedService}/>
         </div>
        </div>
     </div>

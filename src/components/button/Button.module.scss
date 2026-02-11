@@ -14,3 +14,10 @@
    background: linear-gradient(to top left, #4A3AFF 50%, #8C82FF 100%);
    color: #ffffff;
 }
+
+.disabled {
+    background: #D9DBE9;
+    color: #6F6C8F;
+    cursor: not-allowed;
+    border: 1px solid #D9DBE9;
+}

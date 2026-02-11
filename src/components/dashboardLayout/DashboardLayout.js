@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from '../sidebar/Sidebar'
 import styles from './DashboardLayout.module.scss'
 
-const DashboardLayout = ({ children }) => {
+const DashboardLayout = ({stepN, children }) => {
   return (
     <div className={styles.dashboardLayoutContainer}>
       <div className={styles.multiStepFormSection}>
@@ -10,7 +10,7 @@ const DashboardLayout = ({ children }) => {
       </div>
 
       <div className={styles.dashboardLayout}>
-        <Sidebar/>
+        <Sidebar stepN={stepN}/>
         {children}  
       </div>
     </div>

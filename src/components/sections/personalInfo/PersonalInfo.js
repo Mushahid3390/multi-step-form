@@ -4,7 +4,7 @@ import styles from "./PersonalInfo.module.scss";
 import Input from "@/components/input/Input";
 import Button from "../../button/Button.js";
 
-const PersonalInfo = () => {
+const PersonalInfo = ({setUser}) => {
     const [formData, setFormData] = useState({
       name: "",
       email: "",
@@ -44,14 +44,7 @@ const handleFormSubmit = (e) => {
     return;
    }
 
-   setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      company: "",
-      address: "",
-   });
-   alert("form submitted");
+   setUser(formData);
 }
 
 const dataValidate = ({name, email, phone}) => {
@@ -140,7 +133,9 @@ const dataValidate = ({name, email, phone}) => {
                      onChange={handleFormData}
                      name={"address"}/>
 
-           <Button label= "Continue" varient="primary" type="submit"/>
+           <div className={`${styles.personalInfoBtn}`}>
+            <Button label= "Continue" varient="primary" type="submit"/>
+           </div>
         </form>
       </div>
     </div>
