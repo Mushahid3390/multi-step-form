@@ -1,0 +1,23 @@
+.button {
+  width: fit-content;
+  padding: 16px 40.5px;
+  border: 1px solid #D9DBE9;
+  border-radius: 12px;
+  line-height: 114.99999999999999%;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 -2px 2px #1B235512;
+  cursor: pointer;
+}
+
+.primary{
+   background: linear-gradient(to top left, #4A3AFF 50%, #8C82FF 100%);
+   color: #ffffff;
+}
+
+.disabled {
+    background: #D9DBE9;
+    color: #6F6C8F;
+    cursor: not-allowed;
+    border: 1px solid #D9DBE9;
+}

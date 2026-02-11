@@ -1,0 +1,137 @@
+.plansWrapper{
+    flex: 1;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plansContainer {
+    max-width: 698px;
+    width: 100%;
+    padding: 44px;
+    box-shadow: 0 1px 8px #19213D1A;
+    border-radius: 32px;
+    border: 1px solid #F1F2F9;
+    display: flex;
+    flex-direction: column;
+}
+
+.plansHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.plansHeader h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height:114.99999999999999%;
+    color: #19213D;
+}
+
+.plansHeader p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6F6C8F;
+}
+
+.plansBody {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 40px;
+}
+
+.planCard{
+    position: relative;
+    max-width: 293px;
+    width: 100%;
+    border: 1px solid #D9DBE9;
+    box-shadow: 0 .5px 1px #19213D0A;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.planCardHeader {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+
+.selectBtn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #D9DBE9;
+    border-radius: 50%;
+}
+
+.planCardHeader h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 114.99999999999999%;
+    color: #170F49;
+}
+
+.planCardHeader p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #6F6C8F;
+}
+
+.planCardValidation {
+    display: flex;
+    gap: 12px;
+}
+
+.planCardValidation div{
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 114.99999999999999%;
+    color: #514F6E;
+    border-radius: 50px;
+    border: .5px solid #D9DBE9;
+    padding: 4px;
+}
+
+.activeSelectBtn{
+    border: 5px solid #4A3AFF;
+}
+
+.activeplanCard{
+    border: 2px solid #4A3AFF;
+}
+
+.activePlanCardValidation{
+    filter: brightness(0) saturate(100%) invert(19%) sepia(58%) saturate(6844%) hue-rotate(246deg) brightness(102%) contrast(101%);
+}
+
+
+.plansFooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    align-items: center;
+}
+
+.plansFooter p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 114.99999999999999%;
+    color: #6F6C8F;
+}
+
+.navigationButtons{
+    display: flex;
+    gap: 24px;
+}
