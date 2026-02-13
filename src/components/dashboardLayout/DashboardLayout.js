@@ -1,8 +1,8 @@
-import React from 'react'
-import Sidebar from '../sidebar/Sidebar'
-import styles from './DashboardLayout.module.scss'
+import React from 'react';
+import Sidebar from '../sidebar/Sidebar';
+import styles from './DashboardLayout.module.scss';
 
-const DashboardLayout = ({stepN, children }) => {
+const DashboardLayout = ({ stepN, children }) => {
   return (
     <div className={styles.dashboardLayoutContainer}>
       <div className={styles.multiStepFormSection}>
@@ -10,11 +10,11 @@ const DashboardLayout = ({stepN, children }) => {
       </div>
 
       <div className={styles.dashboardLayout}>
-        <Sidebar stepN={stepN}/>
-        {children}  
+        <Sidebar stepN={stepN} />
+        {children}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DashboardLayout
+export default DashboardLayout;

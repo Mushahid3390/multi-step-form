@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const Card = ({service}) => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Card = ({ service }) => {
+  return <div></div>;
+};
 
-export default Card
+export default Card;

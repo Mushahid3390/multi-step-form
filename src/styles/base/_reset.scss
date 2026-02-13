@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 *,
 *::before,
 *::after {
@@ -19,6 +19,6 @@ svg {
 button,
 input,
 textarea,
-select{
-    font: inherit;
+select {
+  font: inherit;
 }

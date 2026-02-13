@@ -1,4 +1,4 @@
-@use "../../../styles/abstracts" as *;
+@use '../../../styles/abstracts' as *;
 
 .plansWrap {
   flex: 1;
@@ -115,9 +115,8 @@
   }
 
   &__CardValidation--Active {
-    filter: brightness(0) saturate(100%) invert(19%) sepia(58%)
-      saturate(6844%) hue-rotate(246deg) brightness(102%)
-      contrast(101%);
+    filter: brightness(0) saturate(100%) invert(19%) sepia(58%) saturate(6844%)
+      hue-rotate(246deg) brightness(102%) contrast(101%);
   }
 
   &__Footer {

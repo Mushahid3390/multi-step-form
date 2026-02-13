@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 h1,
 h2,
@@ -6,16 +6,22 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: $font-semibold;
-    line-height: 1.5;
-    color: $neutral-800;
+  font-weight: $font-semibold;
+  line-height: 1.5;
+  color: $neutral-800;
 }
 
-h1{font-size: $font-3xl;}
-h2{font-size: $font-2xl;}
-h3{font-size: $font-xl;}
+h1 {
+  font-size: $font-3xl;
+}
+h2 {
+  font-size: $font-2xl;
+}
+h3 {
+  font-size: $font-xl;
+}
 
-p{
-    font-weight: $font-normal;
-    color: $neutral-600;
+p {
+  font-weight: $font-normal;
+  color: $neutral-600;
 }
