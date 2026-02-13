@@ -1,50 +1,50 @@
-.ourServices{
-    flex: 1;
-    background: #ffffff;//white
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.ourServices {
+  flex: 1;
+  background: #ffffff; //white
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.ourServicesContent{
+  &__Content {
     max-width: 648px;
     width: 100%;
     padding: 48px;
-    box-shadow: 0 2px 15px #19213D1A;//$neutral-700: #514F6E;//box-shadow
+    box-shadow: 0 2px 15px #19213d1a; //$neutral-700: #514F6E;//box-shadow
     border-radius: 32px;
-    border: 1px solid #F1F2F9;//$neutral-300: #F1F2F9;
+    border: 1px solid #f1f2f9; //$neutral-300: #F1F2F9;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.ourServicesHeader{
+  &__Header {
     display: flex;
     justify-content: space-between;
-}
+  }
 
-.ourServicesHeader h1{
+  &__Header h2 {
     font-weight: 600;
-    color: #170F49;//$neutral-800: #170F49;//color
+    color: #170f49; //$neutral-800: #170F49;//color
     font-size: 24px;
     line-height: 114.99999999999999%;
-}
+  }
 
-.ourServicesHeader p{
+  &__Header p {
     font-weight: 400;
-    color: #6F6C8F;//$neutral-600: #6F6C8F;
+    color: #6f6c8f; //$neutral-600: #6F6C8F;
     font-size: 16px;
     line-height: 114.99999999999999%;
-}
+  }
 
-.ourServicesBody{
+  &__Body {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
     margin-top: 48px;
     width: 100%;
-}
+  }
 
-.ourServicesCard{
+  &__Card {
+    cursor: pointer;
     max-width: 162px;
     width: 100%;
     height: 162px;
@@ -54,31 +54,32 @@
     justify-content: center;
     gap: 16px;
     border-radius: 16px;
-    border: 1px solid #F1F2F9;//$neutral-300: #F1F2F9;
-    box-shadow: 0 .5px 1px #19213D0A;//$neutral-700: #514F6E;//box-shadow
-}
+    border: 1px solid #f1f2f9; //$neutral-300: #F1F2F9;
+    box-shadow: 0 0.5px 1px #19213d0a; //$neutral-700: #514F6E;//box-shadow
+  }
 
-.ourServicesCard p{
+  &__p {
     font-weight: 500;
-    color: #6F6C8F;//$neutral-600: #6F6C8F;
-    font-size: 16px;
-    line-height: 114.99999999999999%;  
-}
-
-.selected{
-    border: 2px solid #4A3AFF;//$purple-700: #4A3AFF;
-    box-shadow: 0 5px 15px #4A3AFF0F;//$neutral-700: #514F6E;
-}
-
-#ourServicesCardText{
-    font-weight: 600;
-    color: #170F49;//$neutral-800: #170F49;//color
+    color: #6f6c8f; //$neutral-600: #6F6C8F;
     font-size: 16px;
     line-height: 114.99999999999999%;
-}
+  }
 
-.ourServicesFooter{
+  &__Card--Active {
+    border: 2px solid #4a3aff; //$purple-700: #4A3AFF;
+    box-shadow: 0 5px 15px #4a3aff0f; //$neutral-700: #514F6E;
+  }
+
+  &__P--active {
+    font-weight: 600;
+    color: #170f49; //$neutral-800: #170F49;//color
+    font-size: 16px;
+    line-height: 114.99999999999999%;
+  }
+
+  &__Footer {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+  }
 }
