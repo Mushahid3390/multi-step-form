@@ -1,72 +1,57 @@
-.personalInfoSection {
+.personalInfoSec {
   flex: 1;
-  background: #ffffff;//white
+  background: #ffffff; //white
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.personalInfoContainer {
-  width: 100%;
-  max-width: 660px;
-  padding: 48px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);//$neutral-700: #514F6E;
-  border-radius: 32px;
-  border: 1px solid #f1f2f9;//$neutral-300: #F1F2F9;
-  box-shadow: 0 8px 8px 0 #19213d0f;//$neutral-700: #514F6E;//box-shadow
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: end;
-}
+  &__Cont {
+    width: 100%;
+    max-width: 660px;
+    padding: 48px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); //$neutral-700: #514F6E;
+    border-radius: 32px;
+    border: 1px solid #f1f2f9; //$neutral-300: #F1F2F9;
+    box-shadow: 0 8px 8px 0 #19213d0f; //$neutral-700: #514F6E;//box-shadow
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: end;
+  }
 
-.personalInfoForm {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+  &__Form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-.personalInfoTitle {
-  font-size: 24px;
-  font-weight: 600;
-  color: #170f49;//$neutral-800: #170F49;
-  line-height: 114.99999999999999%;
-  margin-bottom: 32px;
-}
-.personalInfoInputs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 16px;
-  grid-column-gap: 20px;
-  margin-bottom: 20px;
-  
-}
+  &__Title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #170f49; //$neutral-800: #170F49;
+    line-height: 114.99999999999999%;
+    margin-bottom: 32px;
+  }
 
-.continueButton {
-  margin-top: 20px;
-  width: fit-content;
-  padding: 16px 40.5px;
-  background: linear-gradient(to top left, #4A3AFF 50%, #8C82FF 100%);//$purple-700: #4A3AFF;,$purple-600: #7265fa;
-  color: #ffffff;//white
-  border: none;
-  border-radius: 12px;
-  line-height: 114.99999999999999%;
-  font-size: 16px;
-  font-weight: 600;
-  margin-left: auto;
-  cursor: pointer;
-}
+  &__Inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 16px;
+    grid-column-gap: 20px;
+    margin-bottom: 20px;
+  }
 
-.personalInfoBtn{
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 40px;
-}
+  &__Btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+  }
 
-.error {
-   color: rgb(255, 105, 105);
-   font-size: 14px;
-   font-weight: 400;
-   margin-top: 8px;
-   margin-left: 15px;
+  &__errors {
+    color: rgb(255, 105, 105);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-left: 15px;
+  }
 }
