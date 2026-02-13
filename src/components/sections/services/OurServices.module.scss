@@ -1,7 +1,7 @@
-@use "../../../styles/abstracts" as *;
+@use '../../../styles/abstracts' as *;
 .ourServices {
   flex: 1;
-  background: white; 
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +10,7 @@
     max-width: 648px;
     width: 100%;
     padding: 48px;
-    box-shadow: 0 2px 15px $neutral-700; 
+    box-shadow: 0 2px 15px $neutral-700;
     border-radius: 32px;
     border: 1px solid $neutral-300;
     display: flex;
@@ -31,7 +31,7 @@
 
   &__Header p {
     font-weight: $font-normal;
-    color: $neutral-600; 
+    color: $neutral-600;
     font-size: $font-md;
     line-height: 114.99999999999999%;
   }
@@ -55,7 +55,7 @@
     justify-content: center;
     gap: 16px;
     border-radius: 16px;
-    border: 1px solid $neutral-300; 
+    border: 1px solid $neutral-300;
     box-shadow: 0 0.5px 1px $neutral-700;
   }
 
@@ -67,7 +67,7 @@
   }
 
   &__Card--Active {
-    border: 2px solid $purple-700; 
+    border: 2px solid $purple-700;
     box-shadow: 0 5px 15px $neutral-700;
   }
 

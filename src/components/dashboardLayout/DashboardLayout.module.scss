@@ -1,4 +1,4 @@
-@use "../../styles/abstracts" as *;
+@use '../../styles/abstracts' as *;
 
 .dashboardLayoutContainer {
   display: flex;
@@ -21,7 +21,7 @@
   padding: 12px 16px;
   background-color: $purple-700; //$purple-700: #4A3AFF;
   font-weight: 500;
-  font-size: $font-md;// font-size: 16px;
+  font-size: $font-md; // font-size: 16px;
   line-height: 114.99999999999999%;
   font-style: medium;
   color: white; //white
