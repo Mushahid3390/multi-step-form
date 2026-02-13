@@ -1,60 +1,60 @@
-.thankWrapper{
-    flex:1;
-    background: #ffffff;//white
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@use "../../../styles/abstracts" as *;
+.thankWrap {
+  flex: 1;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.thankContainer {
+  &__Cont {
     max-width: 698px;
     width: 100%;
     padding: 44px;
-    box-shadow: 0 1px 8px #19213D1A;//$neutral-700: #514F6E;//box-shadow
+    box-shadow: 0 1px 8px $neutral-700; 
     border-radius: 32px;
-    border: 1px solid #F1F2F9;//$neutral-300: #F1F2F9;
+    border: 1px solid $neutral-300;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 24px;
-}
+  }
 
-.thankContainer h2 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height:114.99999999999999%;
-    color: #392cc2;//$purple-700: #4A3AFF;
+  &__Cont h2 {
+    font-weight: $font-semibold;
+    font-size: $font-2xl;
+    line-height: 114.99999999999999%;
+    color: $purple-700; 
     text-align: center;
-}
+  }
 
-.thankContainer p {
-    font-weight: 400;
-    font-size: 16px;
+  &__Cont p {
+    font-weight: $font-normal;
+    font-size: $font-md;
     line-height: 150%;
-    color: #6F6C8F;//$neutral-600: #6F6C8F;
+    color: $neutral-600; 
     text-align: center;
-}  
+  }
 
-.card{
+  &__card {
     max-width: 500px;
     width: 100%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 12px;
-    background-color: #fff;//white
+    background-color: white; 
   }
 
-  .heading {
+  &__heading {
     margin-bottom: 15px;
     text-align: center;
   }
 
-
-  .row {
+  &__row {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    font-weight: 400;
-    color: #6F6C8F;//$neutral-600: #6F6C8F;
+    font-weight: $font-normal;
+    color: $neutral-600; 
   }
+}

@@ -1,6 +1,7 @@
+@use "../../../styles/abstracts" as *;
 .ourServices {
   flex: 1;
-  background: #ffffff; //white
+  background: white; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,9 +10,9 @@
     max-width: 648px;
     width: 100%;
     padding: 48px;
-    box-shadow: 0 2px 15px #19213d1a; //$neutral-700: #514F6E;//box-shadow
+    box-shadow: 0 2px 15px $neutral-700; 
     border-radius: 32px;
-    border: 1px solid #f1f2f9; //$neutral-300: #F1F2F9;
+    border: 1px solid $neutral-300;
     display: flex;
     flex-direction: column;
   }
@@ -22,16 +23,16 @@
   }
 
   &__Header h2 {
-    font-weight: 600;
-    color: #170f49; //$neutral-800: #170F49;//color
-    font-size: 24px;
+    font-weight: $font-semibold;
+    color: $neutral-800;
+    font-size: $font-2xl;
     line-height: 114.99999999999999%;
   }
 
   &__Header p {
-    font-weight: 400;
-    color: #6f6c8f; //$neutral-600: #6F6C8F;
-    font-size: 16px;
+    font-weight: $font-normal;
+    color: $neutral-600; 
+    font-size: $font-md;
     line-height: 114.99999999999999%;
   }
 
@@ -54,26 +55,26 @@
     justify-content: center;
     gap: 16px;
     border-radius: 16px;
-    border: 1px solid #f1f2f9; //$neutral-300: #F1F2F9;
-    box-shadow: 0 0.5px 1px #19213d0a; //$neutral-700: #514F6E;//box-shadow
+    border: 1px solid $neutral-300; 
+    box-shadow: 0 0.5px 1px $neutral-700;
   }
 
   &__p {
-    font-weight: 500;
-    color: #6f6c8f; //$neutral-600: #6F6C8F;
-    font-size: 16px;
+    font-weight: $font-medium;
+    color: $neutral-600;
+    font-size: $font-md;
     line-height: 114.99999999999999%;
   }
 
   &__Card--Active {
-    border: 2px solid #4a3aff; //$purple-700: #4A3AFF;
-    box-shadow: 0 5px 15px #4a3aff0f; //$neutral-700: #514F6E;
+    border: 2px solid $purple-700; 
+    box-shadow: 0 5px 15px $neutral-700;
   }
 
   &__P--active {
-    font-weight: 600;
-    color: #170f49; //$neutral-800: #170F49;//color
-    font-size: 16px;
+    font-weight: $font-semibold;
+    color: $neutral-800;
+    font-size: $font-md;
     line-height: 114.99999999999999%;
   }
 
