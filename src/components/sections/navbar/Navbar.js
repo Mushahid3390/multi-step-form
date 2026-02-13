@@ -9,12 +9,12 @@ const Navbar = () => {
        <Image
         src={logo}
         alt="Logo Icon"
-       className={styles.logo}
+       className={styles.nav__logo}
       />
         <Image 
          src={textLogo} 
          alt="Logo"
-         className={styles.textLogoContainer }
+         className={styles.nav__textLogo }
          />
     </div>
   );
