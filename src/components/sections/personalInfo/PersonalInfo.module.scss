@@ -1,6 +1,6 @@
 .personalInfoSection {
   flex: 1;
-  background: #ffffff;
+  background: #ffffff;//white
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,10 +10,10 @@
   width: 100%;
   max-width: 660px;
   padding: 48px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);//$neutral-700: #514F6E;
   border-radius: 32px;
-  border: 1px solid #f1f2f9;
-  box-shadow: 0 8px 8px 0 #19213d0f;
+  border: 1px solid #f1f2f9;//$neutral-300: #F1F2F9;
+  box-shadow: 0 8px 8px 0 #19213d0f;//$neutral-700: #514F6E;//box-shadow
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -29,7 +29,7 @@
 .personalInfoTitle {
   font-size: 24px;
   font-weight: 600;
-  color: #170f49;
+  color: #170f49;//$neutral-800: #170F49;
   line-height: 114.99999999999999%;
   margin-bottom: 32px;
 }
@@ -46,8 +46,8 @@
   margin-top: 20px;
   width: fit-content;
   padding: 16px 40.5px;
-  background: linear-gradient(to top left, #4A3AFF 50%, #8C82FF 100%);
-  color: #ffffff;
+  background: linear-gradient(to top left, #4A3AFF 50%, #8C82FF 100%);//$purple-700: #4A3AFF;,$purple-600: #7265fa;
+  color: #ffffff;//white
   border: none;
   border-radius: 12px;
   line-height: 114.99999999999999%;

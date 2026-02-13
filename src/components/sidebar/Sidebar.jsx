@@ -6,48 +6,48 @@ import styles from "./Sidebar.module.scss";
 
 const Sidebar = ({stepN}) => {
   return (
-    <div className={styles.sidebarContainer}>
+    <div className={styles.sidebar}>
 
-      <div className={styles.sidebar}>
+      <div className={styles.sidebar__panel}>
 
-        <div className={styles.logoContainer}>
-          <Image src={logo} alt="logo" className={styles.logoImage} />
+        <div className={styles.sidebar__logo}>
+          <Image src={logo} alt="logo" className={styles.sidebar__logoImage} />
         </div>
 
-        <div className={styles.stepsContainer}>
-          <div className={`${styles.section}`}>
-            <p className={`${styles.step} ${stepN >= 1 ? styles.stepNumber : ''}`}>1</p>
+        <div className={styles.sidebar__stepsCont}>
+          <div className={`${styles.sidebar__section}`}>
+            <p className={`${styles.sidebar__step} ${stepN >= 1 ? styles["sidebar__step--active"] : ''}`}>1</p>
             <div>
-              <h3 className={styles.h3}>Personal Information</h3>
-              <p className={styles.description}>
+              <h3 className={styles.sidebar__title}>Personal Information</h3>
+              <p className={styles.sidebar__description}>
                 Tell us who you are to get started.
               </p>
             </div>
           </div>
-          <div className={`${styles.bar}`}>
-            <div className={`${styles.barinit} ${stepN > 1 ? styles.barfinal : ''}`}></div>
+          <div className={`${styles.sidebar__progress}`}>
+            <div className={`${styles.sidebar__progLine} ${stepN > 1 ? styles["sidebar__progLine--completed"] : ''}`}></div>
           </div>
 
 
-          <div className={`${styles.section}`}>
-            <p className={`${styles.step} ${stepN >= 2 ? styles.stepNumber : ''}`}>2</p>
+          <div className={`${styles.sidebar__section}`}>
+            <p className={`${styles.sidebar__step} ${stepN >= 2 ? styles["sidebar__step--active"] : ''}`}>2</p>
             <div>
-              <h3 className={styles.h3}>Our Services</h3>
-              <p className={styles.description}>
+              <h3 className={styles.sidebar__title}>Our Services</h3>
+              <p className={styles.sidebar__description}>
                 Select the services you are interested in.
               </p>
             </div>
           </div>
-          <div className={`${styles.bar}`}>
-            <div className={`${styles.barinit} ${stepN > 2 ? styles.barfinal : ''}`}></div>
+          <div className={`${styles.sidebar__progress}`}>
+            <div className={`${styles.sidebar__progLine} ${stepN > 2 ? styles["sidebar__progLine--completed"] : ''}`}></div>
           </div>
 
 
-          <div className={`${styles.section}`}>
-            <p className={`${styles.step} ${stepN >= 3 ? styles.stepNumber : ''}`}>3</p>
+          <div className={`${styles.sidebar__section}`}>
+            <p className={`${styles.sidebar__step} ${stepN >= 3 ? styles["sidebar__step--active"] : ''}`}>3</p>
             <div>
-              <h3 className={styles.h3}>Subscription plan</h3>
-              <p className={styles.description}>
+              <h3 className={styles.sidebar__title}>Subscription plan</h3>
+              <p className={styles.sidebar__description}>
                 Choose the product plan that fits your needs.
               </p>
             </div>
@@ -58,12 +58,12 @@ const Sidebar = ({stepN}) => {
       </div>
 
 
-      <div className={styles.footer}>
+      <div className={styles.sidebar__footer}>
         <div>
-            <h3 className={styles.footerH3}>Need help?</h3>
-            <p className={styles.footerP}>chat with live support</p>
+            <h3 className={styles.sidebar__footTitle}>Need help?</h3>
+            <p className={styles.sidebar__footText}>chat with live support</p>
         </div>
-        <Image src={headPhoneLogo} alt="logo" className={styles.footerLogo} />
+        <Image src={headPhoneLogo} alt="logo" className={styles.sidebar__footIcon} />
       </div>
     </div>
   );
