@@ -1,6 +1,6 @@
 .ourServices{
     flex: 1;
-    background: #ffffff;
+    background: #ffffff;//white
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,9 +10,9 @@
     max-width: 648px;
     width: 100%;
     padding: 48px;
-    box-shadow: 0 2px 15px #19213D1A;
+    box-shadow: 0 2px 15px #19213D1A;//$neutral-700: #514F6E;//box-shadow
     border-radius: 32px;
-    border: 1px solid #F1F2F9;
+    border: 1px solid #F1F2F9;//$neutral-300: #F1F2F9;
     display: flex;
     flex-direction: column;
 }
@@ -24,14 +24,14 @@
 
 .ourServicesHeader h1{
     font-weight: 600;
-    color: #170F49;
+    color: #170F49;//$neutral-800: #170F49;//color
     font-size: 24px;
     line-height: 114.99999999999999%;
 }
 
 .ourServicesHeader p{
     font-weight: 400;
-    color: #6F6C8F;
+    color: #6F6C8F;//$neutral-600: #6F6C8F;
     font-size: 16px;
     line-height: 114.99999999999999%;
 }
@@ -54,25 +54,25 @@
     justify-content: center;
     gap: 16px;
     border-radius: 16px;
-    border: 1px solid #F1F2F9;
-    box-shadow: 0 .5px 1px #19213D0A;
+    border: 1px solid #F1F2F9;//$neutral-300: #F1F2F9;
+    box-shadow: 0 .5px 1px #19213D0A;//$neutral-700: #514F6E;//box-shadow
 }
 
 .ourServicesCard p{
     font-weight: 500;
-    color: #6F6C8F;
+    color: #6F6C8F;//$neutral-600: #6F6C8F;
     font-size: 16px;
     line-height: 114.99999999999999%;  
 }
 
 .selected{
-    border: 2px solid #4A3AFF;
-    box-shadow: 0 5px 15px #4A3AFF0F;
+    border: 2px solid #4A3AFF;//$purple-700: #4A3AFF;
+    box-shadow: 0 5px 15px #4A3AFF0F;//$neutral-700: #514F6E;
 }
 
 #ourServicesCardText{
     font-weight: 600;
-    color: #170F49;
+    color: #170F49;//$neutral-800: #170F49;//color
     font-size: 16px;
     line-height: 114.99999999999999%;
 }
