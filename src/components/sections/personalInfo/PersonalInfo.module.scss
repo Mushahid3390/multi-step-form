@@ -1,0 +1,58 @@
+@use "../../../styles/abstracts" as *;
+.personalInfoSec {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__Cont {
+    width: 100%;
+    max-width: 660px;
+    padding: 48px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    border: 1px solid $neutral-300; ;
+    box-shadow: 0 8px 8px 0 $neutral-700;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: end;
+  }
+
+  &__Form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__Title {
+    font-size: $font-2xl;
+    font-weight: $font-semibold;
+    color: $neutral-800;
+    line-height: 114.99999999999999%;
+    margin-bottom: 32px;
+  }
+
+  &__Inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 16px;
+    grid-column-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__Btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+  }
+
+  &__errors {
+    color: rgb(255, 105, 105);
+    font-size: $font-sm;
+    font-weight: $font-normal;
+    margin-top: 8px;
+    margin-left: 15px;
+  }
+}

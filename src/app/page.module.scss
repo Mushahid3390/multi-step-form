@@ -1,12 +1,13 @@
 .page {
-    background: #F1F0FB;
-    width: 100vw;
+    background: #F1F0FB; //$neutral-200: #F1F0FB;
     height: auto; 
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .main{
+    max-width: 1474px;
     display: flex;
     flex-direction: column;
     gap: 100px;
+    margin: 0 auto;
 }

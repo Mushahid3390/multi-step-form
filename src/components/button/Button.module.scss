@@ -1,0 +1,28 @@
+@use "../../styles/abstracts" as *;
+.button {
+  width: fit-content;
+  padding: 16px 40.5px;
+  border: 1px solid $neutral-400; //$neutral-400: #D9DBE9;
+  border-radius: 12px;
+  line-height: 114.99999999999999%;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 -2px 2px #1b235512;
+  cursor: pointer;
+
+  &--primary {
+    background: linear-gradient(
+      to top left,
+      $purple-700 50%,
+      $purple-600 100%
+    ); //$purple-700: #4A3AFF;,$purple-300: #4A3AFF;
+    color: #ffffff; //white
+  }
+
+  &--disabled {
+    background: $neutral-400; //$neutral-400: #D9DBE9;
+    color: $neutral-600; //$neutral-600: #6F6C8F;
+    cursor: not-allowed;
+    border: 1px solid $neutral-400; //$neutral-400: #D9DBE9;
+  }
+}
