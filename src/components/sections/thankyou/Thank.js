@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./Thank.module.scss";
-import Button from "@/components/button/Button";
+import React from 'react';
+import styles from './Thank.module.scss';
+import Button from '@/components/button/Button';
 
 const Thank = ({ email }) => {
   const user = JSON.parse(localStorage.getItem(email));
@@ -44,7 +44,11 @@ const Thank = ({ email }) => {
             <strong>Plan:</strong> <span>{user.plan[0]}</span>
           </div>
         </div>
-         <Button label={"Go to Homepage"} varient={"primary"} onClick={() => window.location.reload()}/>
+        <Button
+          label={'Go to Homepage'}
+          varient={'primary'}
+          onClick={() => window.location.reload()}
+        />
       </div>
     </div>
   );

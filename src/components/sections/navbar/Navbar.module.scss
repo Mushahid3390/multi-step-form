@@ -1,9 +1,9 @@
-@use "../../../styles/abstracts" as *;
+@use '../../../styles/abstracts' as *;
 
 .nav {
   max-width: 1475px;
   width: 100%;
-  background-color: white; 
+  background-color: white;
   display: flex;
   gap: 21px;
   align-items: center;
