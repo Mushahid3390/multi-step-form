@@ -81,11 +81,11 @@ const dataValidate = ({name, email, phone}) => {
 }
 
   return (
-    <div className={`${styles.personalInfoSection}`}>
-      <div className={`${styles.personalInfoContainer}`}>
-        <form onSubmit={handleFormSubmit} className={`${styles.personalInfoForm}`}>
-          <h3 className={`${styles.personalInfoTitle}`}>Personal Information</h3>
-          <div className={`${styles.personalInfoInputs}`}>
+    <div className={`${styles.personalInfoSec}`}>
+      <div className={`${styles.personalInfoSec__Cont}`}>
+        <form onSubmit={handleFormSubmit} className={`${styles.personalInfoSec__Form}`}>
+          <h3 className={`${styles.personalInfoSec__Title}`}>Personal Information</h3>
+          <div className={`${styles.personalInfoSec__Inputs}`}>
             <div>
                <Input label={"Full name"} 
                    type={"text"}
@@ -93,7 +93,7 @@ const dataValidate = ({name, email, phone}) => {
                    value={formData.name} 
                    onChange={handleFormData}
                    name={"name"}/>
-                {Object.keys(error).length>0&&<p className={styles.error}>{error.name}</p>}
+                {Object.keys(error).length>0&&<p className={styles.personalInfoSec__errors}>{error.name}</p>}
             </div>
 
            <div>
@@ -103,7 +103,7 @@ const dataValidate = ({name, email, phone}) => {
                    value={formData.email}
                    onChange={handleFormData}
                    name={"email"}/>
-               {Object.keys(error).length>0&&<p className={styles.error}>{error.email}</p>}
+               {Object.keys(error).length>0&&<p className={styles.personalInfoSec__errors}>{error.email}</p>}
            </div>
             
             <div>
@@ -113,7 +113,7 @@ const dataValidate = ({name, email, phone}) => {
                    value={formData.phone}
                    onChange={handleFormData}
                    name={"phone"}/>
-                {Object.keys(error).length>0&&<p className={styles.error}>{error.phone}</p>}
+                {Object.keys(error).length>0&&<p className={styles.personalInfoSec__errors}>{error.phone}</p>}
             </div>
 
             <div>
@@ -133,7 +133,7 @@ const dataValidate = ({name, email, phone}) => {
                      onChange={handleFormData}
                      name={"address"}/>
 
-           <div className={`${styles.personalInfoBtn}`}>
+           <div className={`${styles.personalInfoSec__Btn}`}>
             <Button label= "Continue" varient="primary" type="submit"/>
            </div>
         </form>
