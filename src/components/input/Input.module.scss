@@ -1,19 +1,21 @@
-.inputGroup {
+@use "../../styles/abstracts" as *;
+.inputcont {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-.label {
-  font-size: 14px;
-  font-weight: 500;
-  color: #170f49;//$neutral-800: #170F49;
-  line-height: 114.99999999999999%;
-}
 
-.input {
-  padding: 16px;
-  border: 1px solid #d9dbe9;//$neutral-400: #D9DBE9;
-  border-radius: 14px;
-  font-size: 14px;
-  color: #d9dbe9;//$neutral-400: #D9DBE9;
+  &__label {
+    font-size: 14px;
+    font-weight: 500;
+    color: $neutral-800; //$neutral-800: #170F49;
+    line-height: 114.99999999999999%;
+  }
+
+  &__input {
+    padding: 16px;
+    border: 1px solid $neutral-400; //$neutral-400: #D9DBE9;
+    border-radius: 14px;
+    font-size: 14px;
+    color: $neutral-400; //$neutral-400: #D9DBE9;
+  }
 }

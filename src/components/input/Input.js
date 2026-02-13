@@ -2,10 +2,10 @@ import styles from './Input.module.scss'
 
 const Input = ({ label, type, placeholder, value, name, onChange }) => {
   return (
-    <div className={`${styles.inputGroup}`}>
-      <label className={`${styles.label}`} htmlFor={name}>{label}</label>
+    <div className={`${styles.inputcont}`}>
+      <label className={`${styles.inputcont__label}`} htmlFor={name}>{label}</label>
       <input
-        className={`${styles.input}`}
+        className={`${styles.inputcont__input}`}
         type={type}
         name={name}
         placeholder={placeholder}
