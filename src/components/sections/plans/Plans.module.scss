@@ -1,7 +1,8 @@
 @use "../../../styles/abstracts" as *;
+
 .plansWrap {
   flex: 1;
-  background: white; //white
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,9 +11,9 @@
     max-width: 698px;
     width: 100%;
     padding: 44px;
-    box-shadow: 0 1px 8px $neutral-500; //$neutral-700: #514F6E;
+    box-shadow: 0 1px 8px $neutral-500;
     border-radius: 32px;
-    border: 1px solid $neutral-300; //$neutral-300: #F1F2F9;
+    border: 1px solid $neutral-300;
     display: flex;
     flex-direction: column;
   }
@@ -27,14 +28,14 @@
     font-weight: $font-semibold;
     font-size: $font-2xl;
     line-height: 114.99999999999999%;
-    color: #19213d$neutral-800; //$neutral-800: #170F49;
+    color: #19213d$neutral-800;
   }
 
   &__Header p {
     font-weight: $font-normal;
     font-size: $font-md;
     line-height: 150%;
-    color: $neutral-600; //$neutral-600: #6F6C8F;
+    color: $neutral-600;
   }
 
   &__Body {
@@ -49,8 +50,8 @@
     position: relative;
     max-width: 293px;
     width: 100%;
-    border: 1px solid $neutral-400; //$neutral-400: #D9DBE9;
-    box-shadow: 0 0.5px 1px $neutral-700; //$neutral-700: #514F6E;
+    border: 1px solid $neutral-400;
+    box-shadow: 0 0.5px 1px $neutral-700;
     border-radius: 16px;
     padding: 24px;
     display: flex;
@@ -70,7 +71,7 @@
     right: 12px;
     width: 18px;
     height: 18px;
-    border: 2px solid $neutral-400; ////$neutral-400: #D9DBE9;
+    border: 2px solid $neutral-400;
     border-radius: 50%;
   }
 
@@ -78,14 +79,14 @@
     font-weight: $font-semibold;
     font-size: $font-md;
     line-height: 114.99999999999999%;
-    color: $neutral-800; //$neutral-800: #170F49;
+    color: $neutral-800;
   }
 
   &__CardHeader p {
     font-weight: $font-normal;
     font-size: $font-sm;
     line-height: 150%;
-    color: $neutral-600; //$neutral-600: #6F6C8F;
+    color: $neutral-600;
   }
 
   &__CardValidation {
@@ -99,23 +100,24 @@
     font-size: $font-sm;
     font-weight: $font-semibold;
     line-height: 114.99999999999999%;
-    color: $neutral-700; //$neutral-700: #514F6E;
+    color: $neutral-700;
     border-radius: 50px;
-    border: 0.5px solid $neutral-700; //$neutral-400: #D9DBE9;//border
+    border: 0.5px solid $neutral-700;
     padding: 4px;
   }
 
   &__SelectedBtn--Active {
-    border: 5px solid $purple-700; //$purple-700: #4A3AFF;
+    border: 5px solid $purple-700;
   }
 
   &__Card--Active {
-    border: 2px solid $purple-700; //$purple-700: #4A3AFF;
+    border: 2px solid $purple-700;
   }
 
   &__CardValidation--Active {
-    filter: brightness(0) saturate(100%) invert(19%) sepia(58%) saturate(6844%)
-      hue-rotate(246deg) brightness(102%) contrast(101%);
+    filter: brightness(0) saturate(100%) invert(19%) sepia(58%)
+      saturate(6844%) hue-rotate(246deg) brightness(102%)
+      contrast(101%);
   }
 
   &__Footer {
@@ -129,7 +131,7 @@
     font-weight: $font-normal;
     font-size: $font-lg;
     line-height: 114.99999999999999%;
-    color: $neutral-600; //$neutral-600: #6F6C8F;
+    color: $neutral-600;
   }
 
   &__NavigationButtons {
