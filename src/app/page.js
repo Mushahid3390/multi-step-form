@@ -1,6 +1,5 @@
 'use client';
 import Navbar from '@/components/sections/navbar/Navbar';
-import Navbar from '@/components/sections/navbar/Navbar';
 import styles from './page.module.scss';
 import DashboardLayout from '@/components/dashboardLayout/DashboardLayout';
 import PersonalInfo from '@/components/sections/personalInfo/PersonalInfo';
@@ -13,7 +12,6 @@ export default function Home() {
   const [currentStep, setCurrentStep] = useState(1);
   const [personalInfoData, setPersonalInfoData] = useState({});
   const [selectedServices, setSelectedServices] = useState([]);
-  var hello
 
   const setUser = (data) => {
     setPersonalInfoData(data);
