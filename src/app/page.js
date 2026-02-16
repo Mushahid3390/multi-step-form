@@ -12,7 +12,6 @@ export default function Home() {
   const [currentStep, setCurrentStep] = useState(1);
   const [personalInfoData, setPersonalInfoData] = useState({});
   const [selectedServices, setSelectedServices] = useState([]);
-  const [selectedPlan, setSelectedPlan] = useState('');
 
   const setUser = (data) => {
     setPersonalInfoData(data);
